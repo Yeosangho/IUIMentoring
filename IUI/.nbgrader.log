@@ -1,0 +1,95 @@
+[NbGraderApp | INFO] New config file saved to 'nbgrader_config.py'
+[AssignApp | ERROR] An assignment id must be specified, either as an argument or with --assignment
+[AssignApp | INFO] Copying /home/hduser/IUI-server/lecture/IUI/source/./ps1/jupyter.png -> /home/hduser/IUI-server/lecture/IUI/release/./ps1/jupyter.png
+[AssignApp | INFO] Updating/creating assignment 'ps1': {}
+[AssignApp | INFO] Converting notebook /home/hduser/IUI-server/lecture/IUI/source/./ps1/problem1.ipynb to notebook
+[AssignApp | INFO] Writing 7650 bytes to /home/hduser/IUI-server/lecture/IUI/release/./ps1/problem1.ipynb
+[AssignApp | INFO] Converting notebook /home/hduser/IUI-server/lecture/IUI/source/./ps1/problem2.ipynb to notebook
+[AssignApp | INFO] Writing 1807 bytes to /home/hduser/IUI-server/lecture/IUI/release/./ps1/problem2.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbStudentAddApp | INFO] Creating/updating student with ID 'reasoner': {'first_name': 'Louis', 'email': None, 'last_name': 'Reasoner'}
+[AssignApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/release/ps1
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ListApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[AssignApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/release/ps1
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | ERROR] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[ReleaseApp | INFO] Source: /home/hduser/IUI-server/lecture/IUI/release/./ps1
+[ReleaseApp | INFO] Destination: /tmp/exchange/example_course/outbound/ps1
+[ReleaseApp | INFO] Released as: example_course ps1
+[ReleaseApp | ERROR] Destination already exists, add --force to overwrite: example_course ps1
+[ReleaseApp | INFO] Overwriting files: example_course ps1
+[ReleaseApp | INFO] Source: /home/hduser/IUI-server/lecture/IUI/release/./ps1
+[ReleaseApp | INFO] Destination: /tmp/exchange/example_course/outbound/ps1
+[ReleaseApp | INFO] Released as: example_course ps1
+[ListApp | INFO] Released assignments:
+[ListApp | INFO] example_course ps1
+[ListApp | INFO] Submitted assignments:
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:50:03 UTC
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:53:06 UTC
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:57:21 UTC
+[CollectApp | INFO] Collecting submission: hduser ps1
+[AutogradeApp | ERROR] An assignment id must be specified, either as an argument or with --assignment
+[AutogradeApp | INFO] Copying /home/hduser/IUI-server/lecture/IUI/submitted/hduser/ps1/timestamp.txt -> /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1/timestamp.txt
+[AutogradeApp | INFO] Copying /home/hduser/IUI-server/lecture/IUI/submitted/hduser/ps1/jupyter.png -> /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1/jupyter.png
+[AutogradeApp | ERROR] No student with ID 'hduser' exists in the database
+[DbApp | WARNING] Unrecognized alias: '--last-name=1', it will probably have no effect.
+[DbApp | CRITICAL] Bad config encountered during initialization:
+[DbApp | CRITICAL] Invalid argument: '--last-name=1'
+[DbApp | WARNING] Unrecognized alias: '--last-name=A', it will probably have no effect.
+[DbApp | CRITICAL] Bad config encountered during initialization:
+[DbApp | CRITICAL] Invalid argument: '--last-name=A'
+[DbStudentAddApp | INFO] Creating/updating student with ID 'hduser': {'last_name': 'A', 'first_name': 'B', 'email': None}
+[AutogradeApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1
+[AutogradeApp | ERROR] Exception while loading config file /home/hduser/IUI-server/lecture/IUI/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/usr/local/lib/python3.4/dist-packages/ipython_genutils/py3compat.py", line 185, in execfile
+        exec(compiler(f.read(), fname, 'exec'), glob, loc)
+      File "/home/hduser/IUI-server/lecture/IUI/nbgrader_config.py", line 20
+        dict(id="hduser", first_name="A", last_name="B")
+           ^
+    SyntaxError: invalid syntax
+[AutogradeApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1
+[DbStudentListApp | ERROR] Exception while loading config file /home/hduser/IUI-server/lecture/IUI/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/usr/local/lib/python3.4/dist-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/usr/local/lib/python3.4/dist-packages/ipython_genutils/py3compat.py", line 185, in execfile
+        exec(compiler(f.read(), fname, 'exec'), glob, loc)
+      File "/home/hduser/IUI-server/lecture/IUI/nbgrader_config.py", line 20
+        dict(id="hduser", first_name="A", last_name="B")
+           ^
+    SyntaxError: invalid syntax
+[AutogradeApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1
+[FetchApp | INFO] Source: /tmp/exchange/example_course/outbound/ps1
+[FetchApp | INFO] Destination: /home/hduser/IUI-server/lecture/IUI/ps1
+[FetchApp | INFO] Fetched as: example_course ps1
+[AutogradeApp | INFO] Skipping existing assignment: /home/hduser/IUI-server/lecture/IUI/autograded/hduser/ps1
+[ListApp | INFO] Submitted assignments:
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:50:03 UTC
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:53:06 UTC
+[ListApp | INFO] example_course hduser ps1 2017-05-11 16:57:21 UTC
+[ListApp | INFO] example_course hduser ps1 2017-05-11 17:21:34 UTC
